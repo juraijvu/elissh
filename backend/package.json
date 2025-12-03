@@ -9,6 +9,7 @@
     "dev": "nodemon server.js",
     "seed": "node scripts/seedMasterData.js",
     "seed-basic": "node scripts/seedBasic.js",
+    "setup-production": "node scripts/setupProduction.js",
     "seed-products": "node scripts/seedCosmeticProducts.js",
     "seed-banners": "node scripts/seedComprehensiveBanners.js",
     "create-admin": "node scripts/createAdmin.js"
