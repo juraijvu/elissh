@@ -1,5 +1,5 @@
 import express from 'express';
-import { Category } from '../models/index.js';
+import Category from '../models/CategoryBasic.js';
 import { protect, authorize } from '../middleware/auth.js';
 
 const router = express.Router();

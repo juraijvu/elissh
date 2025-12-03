@@ -1,5 +1,5 @@
 import express from 'express';
-import { SEO } from '../models/index.js';
+import SEO from '../models/SEOBasic.js';
 import { protect, authorize } from '../middleware/auth.js';
 
 const router = express.Router();

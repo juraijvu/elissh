@@ -2,6 +2,7 @@ import sequelize from '../config/database.js';
 import User from '../models/User.js';
 import Category from '../models/CategoryBasic.js';
 import Product from '../models/Product.js';
+import SEO from '../models/SEOBasic.js';
 import bcrypt from 'bcryptjs';
 
 const seedBasicData = async () => {
@@ -68,6 +69,15 @@ const seedBasicData = async () => {
       await Product.create(product);
     }
     console.log('✅ Sample products created');
+    
+    // Create basic SEO data
+    await SEO.create({
+      page: 'home',
+      title: 'Elissh Beauty - Premium Cosmetics UAE',
+      description: 'Shop authentic beauty products in UAE with free shipping',
+      keywords: 'cosmetics, beauty, UAE, makeup, skincare'
+    });
+    console.log('✅ SEO data created');
     
     console.log('🎉 Basic seeding completed successfully!');
     
